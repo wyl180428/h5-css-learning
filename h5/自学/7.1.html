@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <form action="process.aspx" method="GET">
+        请输入你的名字：<input type="text" name="your_name" maxlength="5" disabled><br>
+        请输入你的年龄：<input type="text" name="your_age" readonly><br>
+        <input type="number" placeholder="请输入数字类型的值">
+        <input type="submit" value="提交">
+        <input type="reset" value="重置">
+    </form>
+    <form action="process.aspx"  method="GET">
+        用户名：<input type="text" name="your_name"><br>
+        密&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" name="your_pw"><br>
+        <input type="submit" value="登录">
+        <input type="reset" value="取消">
+    </form>
+    请选择你喜欢的运动：<br>
+    <form action="process.aspx" method="POST">
+        <input type="checkbox" name="basketball" value="basketball">篮球<br>
+        <input type="checkbox" name="football" value="football">足球<br>
+        <input type="checkbox" name="tennis" value="tennis">网球<br>
+        <input type="submit" value="提交">
+    </form>
+    每页最多显示邮件数：<br>
+    <form action="ParaSet.aspx" method="POST">
+        <input type="radio" name="email" value="10">10封<br>
+        <input type="radio" name="email" value="20">20封(推荐)<br>
+        <input type="radio" name="email" value="30">30封<br>
+        <input type="radio" name="email" value="40">40封<br>
+        <input type="radio" name="email" value="50">50封<br>
+        <input type="submit" value="提交">
+    </form>
+    <form action="process.aspx" method="POST">
+        请选择你最喜欢的运动：<br>
+        <select name="sports">
+            <option value="football">足球</option>
+            <option value="basketball">篮球</option>
+            <option value="volleyball">排球</option>
+        </select>
+        <input type="image" src="3.jpg"  width="60" value="提交" >
+    </form>
+    <form action="process.aspx" method="POST" enctype="multipart/form-data">
+        <p>
+            请选择文件：<br>
+            <input type="file" name="uploadfile" size="40">
+        </p>
+        <div>
+            <input type="submit" value="上传" name="send">
+        </div>
+    </form>
+    <form action="process.aspx" method="GET">
+        请提出宝贵意见：<br>
+        <textarea name="textarea"  cols="50" rows="10"></textarea>
+        <br>
+        <input type="submit" value="提交">
+        <input type="reset" value="重写">
+    </form>
+    <h3>会员登录</h3>
+    <form action="process.aspx" method="GET">
+        用户名：<input type="text" name="your_name" maxlength="5"><br>
+        密&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password" name="your_pw"><br>
+        <select name="logon_method" size="1" >
+            <option value="individual_member">个人会员</option>
+            <option value="enterprise_member">企业会员</option>
+            <option value="other">其他</option>
+        </select>
+        <br>
+        <input type="submit" value="登录">
+        <input type="reset" value="重设">
+    </form>
+    <table width=600 border="1" cellspacing=0>
+        <tr>
+            <td colspan="4" align="center">留言簿</td>
+        </tr>
+        <tr>
+            <td align="right">您的姓名</td>
+            <td colspan="3"><form action="process.aspx" method="GET"><input type="text" name="your_name">*</form></td>
+        </tr>
+        <tr>
+            <td align="right">您的邮箱</td>
+            <td colspan="3"><form action="process.aspx" method="GET"><input type="email" name="your_email">*</form></td>
+        </tr>
+        <tr>
+            <td align="right">您的网站</td>
+            <td colspan="3"><form action="process.aspx" method="GET"><input type="text" name="your_url" value="http://"></form></td>
+        </tr>
+        <tr>
+            <td align="right">其它联系方式</td>
+            <td colspan="3"><form action="process.aspx" method="GET"><input type="text" name="your_phone">*（如QQ、MSN、电话等）</form></td>
+        </tr>
+        <tr>
+            <td align="right" >留言内容：<br>(200字以内)</td>
+            <td  colspan="3"><form action="process.aspx" method="POST"><textarea name="your_text"  cols="50" rows="4"></textarea>*</form></td>
+        </tr>
+        <tr>
+            <td colspan="4" align="center"><form action="process.aspx" method="GET"><input type="submit" name="提交" value="提交留言">
+            <input type="reset" name="注销" value="重新填写"></form></td>
+        </tr>
+    </table>
+</body>
+</html>

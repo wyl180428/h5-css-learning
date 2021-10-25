@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css实践</title>
+    <style type="text/css">
+        div {
+            width: 500px;
+            height: 100px;
+            margin: 10px auto;
+            border: 1px solid #000;
+        }
+
+        div:nth-child(1) {
+            background-image: linear-gradient(to right, yellow, green);
+        }
+
+        div:nth-child(2) {
+            background-image: linear-gradient(yellow, rgba(0, 128, 0, 0.1));
+        }
+
+        div:nth-child(3) {
+            width: 100px;
+            height: 100px;
+            background-image: linear-gradient(135deg, yellow, green);
+        }
+
+        div:nth-child(4) {
+            background-image: linear-gradient(to right, yellow 0%, red 40%, green 70%, blue 100%);
+        }
+
+        div:nth-child(5) {
+            background-image: linear-gradient(to right, yellow 0%, yellow 25%, blue 25%, blue 50%, red 50%, red 75%, green 75%, green 100%);
+        }
+
+        div:nth-child(6) {
+            background-image: radial-gradient(25px at center, yellow 0%, green 30%, blue 60%, red 100%);
+        }
+
+        div:nth-child(7) {
+            width: 200px;
+            height: 200px;
+            margin: 40px auto;
+            border-radius: 100px;
+            background-color: yellowgreen;
+        }
+
+        .cen {
+            width: auto;
+            height: 600px;
+            border: 0;
+        }
+
+        ul {
+            list-style: none;
+            color: #000;
+            width: 1000px;
+            height: 50px;
+        }
+
+        li {
+            float: left;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            font: bold 12px/22px '宋体';
+            font-size: xx-large
+        }
+
+        .p1 {
+            border-style: double;
+            font-family: 黑体, 草书;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div class="cen">
+    <div id="ter">
+        <ul>
+            <li><a href="">个人</a></li>
+            <li><a href="">介绍</a></li>
+            <li><a href="">接收</a></li>
+            <li><a href="">测试</a></li>
+            <li><a href="">如下</a></li>
+            <li><a href="">联系</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
