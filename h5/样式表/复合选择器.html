@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*后代选择器*/
+        ol li{
+            background-color: #8379A0;
+        }
+        /*子代选择器*/
+        ul>li{
+            background-color: black;
+        }
+        /*并集选择器*/
+        div,p{
+            background-color: #FF0000;
+        }
+        /*伪类选择器*/
+        /*链接伪类选择器*/
+        a:link{    /*选择未访问的链接*/
+            color: black;
+            text-decoration: none;
+        }
+        a:visited{  /*已访问的链接*/
+            color: blue;
+        }
+        a:hover{  /*鼠标经过的链接*/
+            color: green;
+        }
+        a:active{ /*正在点击的链接*/
+            color:red ;
+        }
+        /*focus伪类选择器*/
+        input:focus{
+            background-color: peru;
+        }
+    </style>
+
+</head>
+<body>
+<div>hhh</div>
+<p>qqq</p>
+<a href="#">click</a>
+<input type="text">
+<ol type="I">
+    <li>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+</body>
+</html>
